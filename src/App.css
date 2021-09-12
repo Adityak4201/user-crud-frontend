@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  width: 100%;
+}
+
+.header a {
+  margin: auto 10px;
+  text-decoration: none;
+  padding: 2px 10px;
+  border-radius: 15px;
+  color: #1b5366;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: white;
+  font-weight: bold;
+  background-color: #1b5366;
+}
+
+.header .active {
+  color: white;
+  font-weight: bold;
+  background-color: #1b5366;
+}

@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+  .adduser-container {
+    max-width: 600px !important;
+  }
+  .inline-dropdown {
+    width: 276px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .inline-dropdown {
+    width: 516px;
+  }
+}
+
+@media (max-width: 540px) {
+  .inline-dropdown {
+    padding: 0 12px;
+    max-width: 100%;
+  }
+}
+
+.adduser-container {
+  box-sizing: border-box;
+  border: 1px solid #edab46;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.heading {
+  color: #edab46;
+}
+
+.mb-3 {
+  text-align: left;
+}
+
+.submit-button {
+  background-color: #1b5366;
+  color: #fff;
+  border: none;
+  height: 35px;
+  border-radius: 4px;
+  margin: 15px;
+}
+
+.submit-button:hover {
+  background-color: #236e86;
+}
+
+.submit-button:active {
+  background-color: mediumaquamarine;
+}
+
+.inline-dropdown {
+  height: 38px;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.box-height {
+  height: 38px;
+  margin-bottom: 10px;
+}
+
+.country-mb {
+  margin-bottom: 10px;
+}
+
+.PhoneInputInput {
+  height: 38px;
+  border: 1px solid #ced4da;
+}
