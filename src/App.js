@@ -4,9 +4,9 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import AddUser from "./Components/AddUser";
-import EditUser from "./Components/EditUser";
-import ListUsers from "./Components/ListUsers";
+import AddUser from "./Components/AddUser/AddUser";
+import EditUser from "./Components/EditUser/EditUser";
+import ListUsers from "./Components/ListUsers/ListUsers";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 

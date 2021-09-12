@@ -38,12 +38,9 @@ function AddUser() {
     setError("");
     setSuccess("");
     axios
-      .post(
-        "https://4000-aqua-chicken-iicfq4gb.ws-us15.gitpod.io/user/register",
-        {
-          ...user,
-        }
-      )
+      .post("https://usercrud-backend.herokuapp.com/user/register", {
+        ...user,
+      })
       .then((res) => {
         setSuccess("User Successfully Registered");
       })

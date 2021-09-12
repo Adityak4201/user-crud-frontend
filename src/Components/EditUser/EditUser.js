@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
-import "./AddUser.css";
+import "../AddUser/AddUser.css";
 import PhoneInput from "react-phone-number-input";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 import axios from "axios";
@@ -44,12 +44,9 @@ function EditUser(props) {
     setError("");
     setSuccess("");
     axios
-      .put(
-        "https://4000-aqua-chicken-iicfq4gb.ws-us15.gitpod.io/user/updateUser",
-        {
-          ...user,
-        }
-      )
+      .put("https://usercrud-backend.herokuapp.com//user/updateUser", {
+        ...user,
+      })
       .then((res) => {
         setSuccess("User Successfully Updated");
       })

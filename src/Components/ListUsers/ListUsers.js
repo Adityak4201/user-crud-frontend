@@ -16,7 +16,7 @@ const ListUsers = (props) => {
     setFetchError("");
     const ac = new AbortController();
     axios
-      .get("https://4000-aqua-chicken-iicfq4gb.ws-us15.gitpod.io/user/getUsers")
+      .get("https://usercrud-backend.herokuapp.com/user/getUsers")
       .then((res) => {
         setUsers(res.data.users);
         if (users) setFetchError("");
@@ -38,14 +38,11 @@ const ListUsers = (props) => {
     setError("");
     setSuccess("");
     axios
-      .delete(
-        "https://4000-aqua-chicken-iicfq4gb.ws-us15.gitpod.io/user/delete",
-        {
-          params: {
-            email,
-          },
-        }
-      )
+      .delete("https://usercrud-backend.herokuapp.com/user/delete", {
+        params: {
+          email,
+        },
+      })
       .then((res) => {
         setSuccess(res.data.msg);
         setError("");
